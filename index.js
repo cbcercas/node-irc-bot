@@ -5,6 +5,7 @@ var commandHandler = require('./modules/command-handler.js');
 var observerHandler = require('./modules/observer-handler.js');
 var help = require('./modules/help.js');
 var autoop = require('./modules/autoop.js');
+var automode = require('./modules/automode.js');
 var greetings = require('./modules/greetings.js');
 
 
@@ -54,5 +55,6 @@ client.addListener("join", function(channel, nick, message) {
 
   greetings(client, channel, nick, message);
   autoop(client, channel, nick, message);
+  automode(client, channel, nick, message);
 
 });
