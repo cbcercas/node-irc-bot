@@ -1,0 +1,12 @@
+/* Set per channel user mode
+ * IRC mode http://en.wikipedia.org/wiki/Internet_Relay_Chat#Modes
+*/
+{
+  "#channel1": {
+    "nickname1": "v",
+    "nickname2": "b"
+  },
+  "#channel2": {
+    "nickname3": "v",
+  }
+}
