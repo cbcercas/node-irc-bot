@@ -1,6 +1,6 @@
 var fs = require('fs');
 var irc = require("irc");
-var config  = require('./config.json');
+var config  = require('./config/config.json');
 var commandHandler = require('./modules/command-handler.js');
 var observerHandler = require('./modules/observer-handler.js');
 var help = require('./modules/help.js');
