@@ -34,6 +34,12 @@ module.exports = function() {
     console.error("Reload: greeting.json not in cache")
   }  
  
+  try
+    delete require.cache[require.resolve('../automode.json')];
+  }catch(e){
+    console.error("Reload: automode.json not in cache")
+  }
+
   // build the help string again
   help.buildString();
 
