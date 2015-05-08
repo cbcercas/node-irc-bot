@@ -23,19 +23,19 @@ module.exports = function() {
   });
 
   try {
-    delete require.cache[require.resolve('../autoop.json')];
+    delete require.cache[require.resolve('./config/autoop.json')];
   }catch(e){
     console.error("Reload: autoop.json not in cache")
   }  
 
   try {
-    delete require.cache[require.resolve('../greetings.json')];
+    delete require.cache[require.resolve('./config/greetings.json')];
   }catch(e){
     console.error("Reload: greeting.json not in cache")
   }  
  
   try
-    delete require.cache[require.resolve('../automode.json')];
+    delete require.cache[require.resolve('./config/automode.json')];
   }catch(e){
     console.error("Reload: automode.json not in cache")
   }

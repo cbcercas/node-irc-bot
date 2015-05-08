@@ -8,7 +8,7 @@ var usermodes = ["i", "s", "w", "o", "v", "b", "a"  ]
 
 function autoModes(client, channel, nick) {
 
-  if (!fs.existsSync('../automode.json')) { return false; }
+  if (!fs.existsSync('./config/automode.json')) { return false; }
   var automodes = require('../config/automode.json')
 
   if (automodes == undefined) { return false; }
